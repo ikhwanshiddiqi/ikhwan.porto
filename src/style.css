@@ -70,3 +70,28 @@ body {
     animation: var(--animate-marquee);
   }
 }
+
+/* Reduce vertical spacing between main sections for a denser layout */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Keep slightly larger spacing on large screens */
+@media (min-width: 1024px) {
+  section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+/* Reduce bottom spacing under section headings */
+section h2 {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  section h2 {
+    margin-bottom: 0.75rem;
+  }
+}
